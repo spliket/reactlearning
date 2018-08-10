@@ -1,0 +1,32 @@
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 50px 0;
+}
+
+.headerGroup {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.header a {
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 0 0;
+    }
+
+    .headerGroup {
+        grid-template-columns: repeat(1, auto);
+        justify-items: left;
+        margin: 20px 20px;
+    }
+}
